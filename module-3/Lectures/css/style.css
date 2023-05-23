@@ -31,7 +31,7 @@ body {
 	text-shadow: 1px 1px 1px #222;
 	margin-top: 0;
 	margin-bottom: 0;
-	line-height: ;
+	line-height: 20px;
 }
 
 .navbar-brand a:hover, .navbar-brand a:focus {
@@ -150,6 +150,36 @@ body {
 	background-color: #000;
 	color: #fff;
 	opacity: .7;
+}
+
+.category-tile {
+	position: relative;
+	border: 2px solid black;
+	overflow: hidden;
+	width: 200px;
+	height: 200px;
+	margin: 0 auto 15px;
+}
+
+.category-tile span {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	background-color: black;
+	opacity: 0.8;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	color: white;
+}
+
+.category-tile:hover {
+	box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-categories-title + div {
+	margin-bottom: 50px;
 }
 
 @media (width >= 1200px) {
